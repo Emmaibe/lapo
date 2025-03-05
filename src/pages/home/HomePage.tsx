@@ -17,7 +17,7 @@ export const HomePage = () => {
                 <Header />
 
                 {/* Dynamic Page Content */}
-                <section className="overflow-y-auto flex-grow p-4 bg-secondary-background">
+                <section className="overflow-y-auto flex-grow p-4 bg-secondary-background max-sm:p-2">
                     <Outlet />
                 </section>
             </div>

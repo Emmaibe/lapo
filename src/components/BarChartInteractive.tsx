@@ -38,7 +38,7 @@ export function BarChartComponent() {
     return (
         <Card>
             <CardHeader>
-                <CardTitle className="text-lg font-medium">Monthly Insurance</CardTitle>
+                <CardTitle className="text-lg font-medium max-sm:text-base">Monthly Insurance</CardTitle>
             </CardHeader>
             <CardContent>
                 <ChartContainer config={chartConfig}>
@@ -63,14 +63,14 @@ export function BarChartComponent() {
                             stackId="a"
                             fill="var(--color-personalized)"
                             radius={[0, 0, 0, 0]}
-                            barSize={40}
+                            barSize={30}
                         />
                         <Bar
                             dataKey="instant"
                             stackId="a"
                             fill="var(--color-instant)"
                             radius={[8, 8, 0, 0]}
-                            barSize={40}
+                            barSize={30}
                         />
                         <ChartTooltip
                             content={

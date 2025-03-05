@@ -7,7 +7,7 @@ export const SideBar = () => {
     console.log(location.pathname);
 
     return (
-        <section className="w-[230px] h-dvh flex flex-col justify-between sticky top-0 bg-neutral-100 border-r border-neutral-400">
+        <section className="max-[870px]:hidden w-[230px] h-dvh flex flex-col justify-between sticky top-0 bg-neutral-100 border-r border-neutral-400">
             <div>
                 <div className="p-3">
                     <figure className="p-3">

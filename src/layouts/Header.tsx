@@ -13,8 +13,8 @@ export const Header = () => {
             </div>
             <div
                 className="flex h-full items-center justify-end gap-6">
-                <div className="relative">
-                <LuSearch className="absolute top-[8px] left-3 text-black"/>
+                <div className="relative max-sm:hidden">
+                    <LuSearch className="absolute top-[8px] left-3 text-black"/>
                     <input
                         type="search"
                         placeholder="Search"

@@ -89,9 +89,9 @@ export function ChartAreaComponent() {
     }
 
     return (
-        <Card className="bg-neutral-100 rounded-[10px]">
+        <Card className="bg-neutral-100 rounded-[10px] max-sm:p-2">
             <CardHeader className="flex items-center gap-2 space-y-0 py-5 sm:flex-row">
-                <div className="flex items-center gap-3 text-center sm:text-left mt-2">
+                <div className="w-full flex items-center gap-3 mt-2 max-sm:text-base">
                     <CardTitle>{getChartTitle()}</CardTitle>
                 </div>
                 {/*<Select value={dataRange} onValueChange={setDataRange}>*/}
@@ -160,7 +160,7 @@ export function ChartAreaComponent() {
                             dataKey="desktop"
                             type="monotone"
                             fill="url(#fillDesktop)"
-                            stroke="#FF7A00"
+                            stroke="#29A174"
                             strokeWidth={2}
                             fillOpacity={0.6}
                             stackId="a"

@@ -8,7 +8,7 @@ import {PieChartComponent} from "../../../components/PieChartInteractice.tsx";
 const Dashboard = () => {
     return (
         <section>
-            <div className="text-neutral-800 flex justify-between items-start">
+            <div className="text-neutral-800 flex justify-between items-start gap-3 max-sm:flex-col">
                 <div className="space-y-2">
                     <h2 className="text-lg font-bold">
                         Hi Nazeer, what would you like to do today?
@@ -81,8 +81,8 @@ const Dashboard = () => {
                         <img src="src/assets/icons/credit-card-check.svg"/>
                         <h5>Total Active Cards</h5>
                     </div>
-                    <div className="flex-between">
-                        <div className="font-bold text-[24px] text-neutral-800">
+                    <div className="flex-between gap-2">
+                        <div className="font-bold text-[24px] text-neutral-800 max-sm:text-xl">
                             26,478
                         </div>
                         <div className="flex items-center gap-2">
@@ -101,8 +101,8 @@ const Dashboard = () => {
                         <img src="src/assets/icons/credit-card-edit.svg"/>
                         <h5>Total Personalized Cards</h5>
                     </div>
-                    <div className="flex-between">
-                        <div className="font-bold text-[24px] text-neutral-800">
+                    <div className="flex-between gap-2">
+                        <div className="font-bold text-[24px] text-neutral-800 max-sm:text-xl">
                             15,703
                         </div>
                         <div className="flex items-center gap-2">
@@ -121,8 +121,8 @@ const Dashboard = () => {
                         <img src="src/assets/icons/bank-note-01.svg"/>
                         <h5>Today&apos;s Revenue</h5>
                     </div>
-                    <div className="flex-between">
-                        <div className="font-bold text-[24px] text-neutral-800">
+                    <div className="flex-between gap-2">
+                        <div className="font-bold text-[24px] text-neutral-800 max-sm:text-xl">
                             ₦9.3M
                         </div>
                         <div className="flex items-center gap-2">
@@ -141,8 +141,8 @@ const Dashboard = () => {
                         <img src="src/assets/icons/hourglass-03.svg"/>
                         <h5>Pending Requests</h5>
                     </div>
-                    <div className="flex-between">
-                        <div className="font-bold text-[24px] text-neutral-800">
+                    <div className="flex-between gap-2">
+                        <div className="font-bold text-[24px] text-neutral-800 max-sm:text-xl">
                             38
                         </div>
                         <div className="flex items-center gap-1.5">
@@ -153,78 +153,78 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <section className="w-full grid grid-cols-2 gap-2.5 mt-3">
+            <section className="w-full grid grid-cols-2 max-[1210px]:grid-cols-1 gap-2.5 mt-3">
                 <BarChartComponent />
-                <div className="bg-neutral-100 rounded-[12px] p-5 flex-grow space-y-4 border border-neutral-450">
+                <div className="bg-neutral-100 rounded-[12px] p-5 max-sm:p-3 flex-grow space-y-4 border border-neutral-450">
                     <div className="w-full flex-between">
-                        <h3 className="text-lg font-medium">Recent Card Requests</h3>
+                        <h3 className="text-lg font-medium max-sm:text-base">Recent Card Requests</h3>
                         <CgArrowsExpandRight color="#DEDEDF" className="text-neutral-450" />
                     </div>
 
                     <div>
                         <div className="w-full grid grid-cols-5 bg-secondary-background py-3 border border-neutral-450">
-                            <p className="text-sm text-center font-medium text-neutral-900/50">Branch</p>
-                            <p className="text-sm text-center font-medium text-neutral-900/50">Card Type</p>
-                            <p className="text-sm text-center font-medium text-neutral-900/50">Quantity</p>
-                            <p className="text-sm text-center font-medium text-neutral-900/50">Status</p>
-                            <p className="text-sm text-center font-medium text-neutral-900/50">Action</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Branch</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Card Type</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Quantity</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Status</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Action</p>
                         </div>
 
                         <div className="w-full grid grid-cols-5 py-2 border-b border-neutral-450">
-                            <p className="text-sm text-center font-medium py-1 text-neutral-900/50">Corporate</p>
-                            <p className="text-sm text-center font-medium py-1 text-neutral-900/50">Instant</p>
-                            <p className="text-sm text-center font-medium py-1 text-neutral-900/50">10</p>
-                            <p className="text-sm text-center font-medium text-secondary-growth">
-                                <div className="border border-secondary-growth bg-secondary-growth_background rounded-full w-fit mx-auto px-2 py-1">
+                            <p className="text-sm max-sm:text-xs text-center font-medium py-1 text-neutral-900/50">Corporate</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium py-1 text-neutral-900/50">Instant</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium py-1 text-neutral-900/50">10</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-secondary-growth">
+                                <div className="border border-secondary-growth bg-secondary-growth_background rounded-full w-fit mx-auto px-2 py-1 max-sm:text-[9px] max-sm:px-1 max-sm:py-0">
                                     Ready
                                 </div>
                             </p>
-                            <p className="text-sm text-center font-bold py-1 text-secondary-active">View</p>
+                            <p className="text-sm max-sm:text-xs text-center font-bold py-1 text-secondary-active">View</p>
                         </div>
 
                         <div className="w-full grid grid-cols-5 py-3 border-b border-neutral-450">
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">Corporate</p>
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">Personalized</p>
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">10</p>
-                            <p className="text-sm text-center font-medium text-secondary-pending">
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">Corporate</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">Personalized</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">10</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-secondary-pending">
                                 <div
-                                    className="border border-secondary-pending bg-secondary-pending_background rounded-full w-fit mx-auto px-2 py-1">
+                                    className="border border-secondary-pending bg-secondary-pending_background rounded-full w-fit mx-auto px-2 py-1 max-sm:text-[9px] max-sm:px-1 max-sm:py-0">
                                     In Progress
                                 </div>
                             </p>
-                            <p className="text-sm text-center flex-grow py-1 font-bold text-secondary-active">View</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-bold text-secondary-active">View</p>
                         </div>
 
                         <div className="w-full grid grid-cols-5 py-3 border-b border-neutral-450">
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">Corporate</p>
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">Personalized</p>
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">10</p>
-                            <p className="text-sm text-center font-medium text-secondary-active">
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">Corporate</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">Personalized</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">10</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-secondary-active">
                                 <div
-                                    className="border border-secondary-active bg-secondary-active_background rounded-full w-fit mx-auto px-2 py-1">
+                                    className="border border-secondary-active bg-secondary-active_background rounded-full w-fit mx-auto px-2 py-1 max-sm:text-[9px] max-sm:px-1 max-sm:py-0">
                                     Acknowledged
                                 </div>
                             </p>
-                            <p className="text-sm text-center flex-grow py-1 font-bold text-secondary-active">View</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-bold text-secondary-active">View</p>
                         </div>
 
                         <div className="w-full grid grid-cols-5 py-3">
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">Corporate</p>
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">Instant</p>
-                            <p className="text-sm text-center flex-grow py-1 font-medium text-neutral-900/50">10</p>
-                            <p className="text-sm text-center font-medium text-gray-700">
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">Corporate</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">Instant</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-medium text-neutral-900/50">10</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-gray-700">
                                 <div
-                                    className="border border-gray-700 bg-gray-200 rounded-full w-fit mx-auto px-2 py-1">
+                                    className="border border-gray-700 bg-gray-200 rounded-full w-fit mx-auto px-2 py-1 max-sm:text-[9px] max-sm:px-1 max-sm:py-0">
                                     Pending
                                 </div>
                             </p>
-                            <p className="text-sm text-center flex-grow py-1 font-bold text-secondary-active">View</p>
+                            <p className="text-sm max-sm:text-xs text-center flex-grow py-1 font-bold text-secondary-active">View</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="w-full grid grid-cols-2 gap-2.5 mt-3">
+            <section className="w-full grid grid-cols-2 max-lg:grid-cols-1 gap-2.5 mt-3">
                 <ChartAreaComponent />
                 <PieChartComponent />
             </section>
