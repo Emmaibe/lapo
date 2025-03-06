@@ -1,6 +1,6 @@
-import { IoIosArrowForward } from "react-icons/io";
-import { HiArrowUpRight } from "react-icons/hi2";
-import { CgArrowsExpandRight } from "react-icons/cg";
+import {IoIosArrowForward} from "react-icons/io";
+import {HiArrowUpRight} from "react-icons/hi2";
+import {CgArrowsExpandRight} from "react-icons/cg";
 import {ChartAreaComponent} from "../../../components/ChartAreaInteractive.tsx";
 import {BarChartComponent} from "../../../components/BarChartInteractive.tsx";
 import {PieChartComponent} from "../../../components/PieChartInteractice.tsx";
@@ -21,7 +21,7 @@ const Dashboard = () => {
                 <div className="flex-center gap-2 border border-neutral-450 rounded-[4px] py-2 px-4">
                     <div className="flex-center gap-1">
                         <img
-                            src={"src/assets/icons/calendar.svg"}
+                            src={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219840/calendar_spcwfe.svg"}
                             alt={"calendar"}
                         />
                         <p className="text-[11px] font-medium">Today</p>
@@ -37,33 +37,22 @@ const Dashboard = () => {
                 <h3 className="font-medium text-[16px]">Your Quick Access</h3>
 
                 <div className="mt-3 flex-between flex-wrap gap-2">
-                    <div
-                        className="bg-secondary-background rounded-[4px] flex flex-grow items-center gap-3.5 py-2 px-4">
-                        <img src={"src/assets/icons/manage_card.svg"} alt={"manage card"}/>
-                        <p className="text-[14px] font-medium">Manage a Card</p>
-                        <IoIosArrowForward className="text-neutral-450 relative right-2"/>
-                    </div>
-
-                    <div
-                        className="bg-secondary-background rounded-[4px] flex flex-grow items-center gap-3.5 py-2 px-4">
-                        <img src={"src/assets/icons/instant_card.svg"} alt={"instant card"}/>
-                        <p className="text-[14px] font-medium">Issue Instant Card</p>
-                        <IoIosArrowForward className="text-neutral-450 relative right-2"/>
-                    </div>
-
-                    <div
-                        className="bg-secondary-background rounded-[4px] flex flex-grow items-center gap-3.5 py-2 px-4">
-                        <img src={"src/assets/icons/personalize_card.svg"} alt={"personalized card"}/>
-                        <p className="text-[14px] font-medium">Issue Personalized Card</p>
-                        <IoIosArrowForward className="text-neutral-450 relative right-2"/>
-                    </div>
-
-                    <div
-                        className="bg-secondary-background rounded-[4px] flex flex-grow items-center gap-3.5 py-2 px-4">
-                        <img src={"src/assets/icons/review_card.svg"} alt={"review card"}/>
-                        <p className="text-[14px] font-medium">Review Card Requests</p>
-                        <IoIosArrowForward className="text-neutral-450 relative right-2"/>
-                    </div>
+                    <QuickAccess
+                        icon={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219846/manage_card_e8skli.svg"}
+                        title={"Manage a Card"}
+                    />
+                    <QuickAccess
+                        icon={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219844/instant_card_hz4ykv.svg"}
+                        title={"Issue Instant Card"}
+                    />
+                    <QuickAccess
+                        icon={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219847/personalize_card_evxprw.svg"}
+                        title={"Issue Personalized Card"}
+                    />
+                    <QuickAccess
+                        icon={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219847/review_card_furxo3.svg"}
+                        title={"Review Card Requests"}
+                    />
                 </div>
             </div>
 
@@ -72,13 +61,13 @@ const Dashboard = () => {
                     Analytics
                 </h2>
 
-                <div className="border-t border-neutral-450 flex-grow" />
+                <div className="border-t border-neutral-450 flex-grow"/>
             </div>
 
             <div className="mt-3 flex-between flex-wrap gap-2">
                 <div className="bg-neutral-100 rounded-[10px] p-3 flex-grow space-y-2 border border-neutral-450">
                     <div className="font-medium text-sm text-neutral-900/50 space-y-1">
-                        <img src="src/assets/icons/credit-card-check.svg"/>
+                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219838/credit-card-check_zzxoh4.svg"/>
                         <h5>Total Active Cards</h5>
                     </div>
                     <div className="flex-between gap-2">
@@ -98,7 +87,7 @@ const Dashboard = () => {
 
                 <div className="bg-neutral-100 rounded-[10px] p-3 flex-grow space-y-2 border border-neutral-450">
                     <div className="font-medium text-sm text-neutral-900/50 space-y-1">
-                        <img src="src/assets/icons/credit-card-edit.svg"/>
+                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219840/credit-card-edit_aacavs.svg"/>
                         <h5>Total Personalized Cards</h5>
                     </div>
                     <div className="flex-between gap-2">
@@ -118,7 +107,7 @@ const Dashboard = () => {
 
                 <div className="bg-neutral-100 rounded-[10px] p-3 flex-grow space-y-2 border border-neutral-450">
                     <div className="font-medium text-sm text-neutral-900/50 space-y-1">
-                        <img src="src/assets/icons/bank-note-01.svg"/>
+                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219844/bank-note-01_ujmxmf.svg"/>
                         <h5>Today&apos;s Revenue</h5>
                     </div>
                     <div className="flex-between gap-2">
@@ -138,7 +127,7 @@ const Dashboard = () => {
 
                 <div className="bg-neutral-100 rounded-[10px] p-3 flex-grow space-y-2 border border-neutral-450">
                     <div className="font-medium text-sm text-neutral-900/50 space-y-1">
-                        <img src="src/assets/icons/hourglass-03.svg"/>
+                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219844/hourglass-03_m3xgno.svg"/>
                         <h5>Pending Requests</h5>
                     </div>
                     <div className="flex-between gap-2">
@@ -146,7 +135,7 @@ const Dashboard = () => {
                             38
                         </div>
                         <div className="flex items-center gap-1.5">
-                            <img src="src/assets/icons/alert-circle.svg" />
+                            <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219844/alert-circle_hxjgxi.svg"/>
                             <p className="text-xs font-normal text-secondary-pending">Requires attention</p>
                         </div>
                     </div>
@@ -154,17 +143,19 @@ const Dashboard = () => {
             </div>
 
             <section className="w-full grid grid-cols-2 max-[1210px]:grid-cols-1 gap-2.5 mt-3">
-                <BarChartComponent />
-                <div className="bg-neutral-100 rounded-[12px] p-5 max-sm:p-3 flex-grow space-y-4 border border-neutral-450">
+                <BarChartComponent/>
+                <div
+                    className="bg-neutral-100 rounded-[12px] p-5 max-sm:p-3 flex-grow space-y-4 border border-neutral-450">
                     <div className="w-full flex-between">
                         <h3 className="text-lg font-medium max-sm:text-base">Recent Card Requests</h3>
-                        <CgArrowsExpandRight color="#DEDEDF" className="text-neutral-450" />
+                        <CgArrowsExpandRight color="#DEDEDF" className="text-neutral-450"/>
                     </div>
 
                     <div>
                         <div className="w-full grid grid-cols-5 bg-secondary-background py-3 border border-neutral-450">
                             <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Branch</p>
-                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Card Type</p>
+                            <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Card
+                                Type</p>
                             <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Quantity</p>
                             <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Status</p>
                             <p className="text-sm max-sm:text-xs text-center font-medium text-neutral-900/50">Action</p>
@@ -175,7 +166,8 @@ const Dashboard = () => {
                             <p className="text-sm max-sm:text-xs text-center font-medium py-1 text-neutral-900/50">Instant</p>
                             <p className="text-sm max-sm:text-xs text-center font-medium py-1 text-neutral-900/50">10</p>
                             <p className="text-sm max-sm:text-xs text-center font-medium text-secondary-growth">
-                                <div className="border border-secondary-growth bg-secondary-growth_background rounded-full w-fit mx-auto px-2 py-1 max-sm:text-[9px] max-sm:px-1 max-sm:py-0">
+                                <div
+                                    className="border border-secondary-growth bg-secondary-growth_background rounded-full w-fit mx-auto px-2 py-1 max-sm:text-[9px] max-sm:px-1 max-sm:py-0">
                                     Ready
                                 </div>
                             </p>
@@ -225,11 +217,23 @@ const Dashboard = () => {
             </section>
 
             <section className="w-full grid grid-cols-2 max-lg:grid-cols-1 gap-2.5 mt-3">
-                <ChartAreaComponent />
-                <PieChartComponent />
+                <ChartAreaComponent/>
+                <PieChartComponent/>
             </section>
         </section>
     );
 };
 
 export default Dashboard;
+
+const QuickAccess = ({icon, title}: {
+    icon: string,
+    title: string,
+}) => (
+    <div
+        className="bg-secondary-background rounded-[4px] flex flex-grow items-center gap-3.5 py-2 px-4">
+        <img src={icon} alt={title}/>
+        <p className="text-[14px] font-medium">{title}</p>
+        <IoIosArrowForward className="text-neutral-450 relative right-2"/>
+    </div>
+);

@@ -11,7 +11,7 @@ export const SideBar = () => {
             <div>
                 <div className="p-3">
                     <figure className="p-3">
-                        <img src="src/assets/icons/lapo_logo.svg" alt="lapo logo"/>
+                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219842/elements_m8f9u8.svg" alt="lapo logo"/>
                     </figure>
                 </div>
 
@@ -29,7 +29,7 @@ export const SideBar = () => {
                         <NavButtons
                             key={item.title}
                             {...item}
-                            isCurrentRoute={location.pathname === item.route}
+                            isCurrentRoute={false}
                         />
                     ))}
                 </nav>
@@ -41,7 +41,7 @@ export const SideBar = () => {
                 <div className="py-2 px-[11px] mt-4 grid gap-2">
                     <button
                         className={`text-neutral-150 p-3 text-neutral-800 font-medium rounded-[8px] text-[12px] flex items-center gap-2 h-fit`}>
-                        <span><img src={"src/assets/icons/logout-02.svg"} alt={"logout"}/> </span> Logout
+                        <span><img src={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219845/logout-02_ooxqou.svg"} alt={"logout"}/> </span> Logout
                     </button>
                 </div>
             </div>
@@ -69,62 +69,62 @@ const NavButtons = ({title, icon, route, isCurrentRoute}: {
 const navItems = [
     {
         title: "Branches",
-        icon: "src/assets/icons/branches.svg",
-        route: "/branches"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219842/branches_acwkhn.svg",
+        route: "/"
     },
     {
         title: "Roles",
-        icon: "src/assets/icons/roles.svg",
-        route: "/roles"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219847/roles_inpqca.svg",
+        route: "/"
     },
     {
         title: "Users",
-        icon: "src/assets/icons/users.svg",
-        route: "/users"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219840/users_aieyqi.svg",
+        route: "/"
     },
     {
         title: "Card Scheme",
-        icon: "src/assets/icons/card_scheme.svg",
-        route: "/card-scheme"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219840/card_scheme_w3jllt.svg",
+        route: "/"
     },
     {
         title: "Card Profile",
-        icon: "src/assets/icons/card_profile.svg",
-        route: "/card-profile"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219842/card_profile_dpg9hg.svg",
+        route: "/"
     },
     {
         title: "Card Request",
-        icon: "src/assets/icons/card_request.svg",
-        route: "/card-request"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219838/card_request_udvgen.svg",
+        route: "/"
     },
     {
         title: "Stock",
-        icon: "src/assets/icons/stock.svg",
-        route: "/stock"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219838/stock_jufokw.svg",
+        route: "/"
     },
     {
         title: "Cards",
-        icon: "src/assets/icons/cards.svg",
-        route: "/cards"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219838/cards_t37n0l.svg",
+        route: "/"
     },
     {
         title: "Authorization List",
-        icon: "src/assets/icons/auth_list.svg",
-        route: "/authorization-list"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219844/auth_list_vqte3c.svg",
+        route: "/"
     },
     {
         title: "Authorization Queue",
-        icon: "src/assets/icons/auth_queue.svg",
-        route: "/authorization-queue"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219845/auth_queue_hjguxh.svg",
+        route: "/"
     },
     {
         title: "Trail",
-        icon: "src/assets/icons/trail.svg",
-        route: "/trail"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219840/trail_vcurh3.svg",
+        route: "/"
     },
     {
         title: "Account",
-        icon: "src/assets/icons/account.svg",
-        route: "/account"
+        icon: "https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219843/account_agjfcg.svg",
+        route: "/"
     },
 ]
