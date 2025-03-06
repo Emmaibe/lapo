@@ -11,7 +11,7 @@ export const SideBar = () => {
             <div>
                 <div className="p-3">
                     <figure className="p-3">
-                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219842/elements_m8f9u8.svg" alt="lapo logo"/>
+                        <img src="https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219847/lapo_logo_zwftjs.svg" alt="lapo logo"/>
                     </figure>
                 </div>
 
@@ -19,7 +19,7 @@ export const SideBar = () => {
                     <button
                         onClick={() => navigate("/")}
                         className={`text-neutral-150 p-3 ${location.pathname === "/" ? "text-secondary-active bg-neutral-200 border border-neutral-300" : "text-neutral-900/50"} font-medium rounded-[8px] text-[12px] flex items-center gap-2 h-fit`}>
-                        <span><img src={"src/assets/icons/elements.svg"} alt={"home"}/> </span> Dashboard
+                        <span><img src={"https://res.cloudinary.com/dpfqbb9pl/image/upload/v1741219842/elements_m8f9u8.svg"} alt={"home"}/> </span> Dashboard
                     </button>
 
                     <h3 className="text-neutral-900/50 text-[8.5px] px-[28px] my-4">MAIN MENU</h3>
